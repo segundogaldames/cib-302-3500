@@ -12,6 +12,9 @@ footer{
     background-color: rgb(192, 189, 189);
 }
 header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     height: 100px;
     padding: 10px;
     background-image: linear-gradient(rgb(240, 231, 231), rgb(114, 114, 111), rgb(151, 156, 151));;
@@ -22,7 +25,7 @@ nav{
     text-align: center;
 }
 nav ul li{
-    display: inline-block; 
+    display: inline-block;
 }
 nav ul li a{
     text-decoration: none;
@@ -40,5 +43,10 @@ nav ul li a:hover{
     background-color: honeydew;
 }
 section{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
     margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
