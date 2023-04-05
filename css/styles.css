@@ -1,32 +1,49 @@
-article{
+/* article{
     width: 80%;
-}
+} */
 aside{
-    width: 19%;
+    background-color: rgb(202, 230, 220);
+    margin-bottom: 1.25rem;
+    height: auto;
 }
-article, aside{
+aside ul{
+    margin: 0.625rem;
+}
+aside ul li a{
+    color: darkslategray;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+aside ul li a:hover{
+    text-decoration: underline;
+}
+/* article, aside{
     display: inline-block;
-}
+} */
 footer{
-    height: 100px;
+    height: 6.25rem;
     background-color: rgb(192, 189, 189);
 }
 header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    height: 100px;
-    padding: 10px;
+    height: 6.25rem;
+    padding: 0.625rem;
     background-image: linear-gradient(rgb(240, 231, 231), rgb(114, 114, 111), rgb(151, 156, 151));;
 }
 nav{
-    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 2.5rem;
     background-color: gray;
-    text-align: center;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
 }
-nav ul li{
+/* nav ul li{
     display: inline-block;
-}
+} */
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -44,9 +61,47 @@ nav ul li a:hover{
 }
 section{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
-    margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-top: 1.25rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+}
+
+/*class styles*/
+.articulo{
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+.center ul li{
+    display: inline-block;
+}
+.left{
+    text-align: left;
+}
+.notice{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0.625rem;
+}
+.notice a{
+    text-decoration: none;
+}
+.notice a:hover{
+    text-decoration: underline;
+}
+.right{
+    text-align: right;
+}
+.text{
+    max-width: 100%;
+    color: black;
+}
+.title-articulo{
+    font-size: x-large;
+    color: blue;
+    text-align: center;
+    margin-bottom: 4px;
 }
