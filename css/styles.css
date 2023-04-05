@@ -1,0 +1,44 @@
+article{
+    width: 80%;
+}
+aside{
+    width: 19%;
+}
+article, aside{
+    display: inline-block;
+}
+footer{
+    height: 100px;
+    background-color: rgb(192, 189, 189);
+}
+header{
+    height: 100px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(240, 231, 231), rgb(114, 114, 111), rgb(151, 156, 151));;
+}
+nav{
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block; 
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: honeydew;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 7px;
+    display: block;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    color: gray;
+    background-color: honeydew;
+}
+section{
+    margin-top: 20px;
+}
