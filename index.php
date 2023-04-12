@@ -1,3 +1,7 @@
+<?php
+ #echo '<h1 style="font-size:40px">Hola Noticias</h1>';
+ $saludar = 'Hola noticias';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +15,9 @@
 <body>
     <!-- seccion cabecera -->
     <header>
-        <div></div>
+        <div>
+            <?= $saludar; ?>
+        </div>
         <div></div>
         <div></div>
         <div></div>
