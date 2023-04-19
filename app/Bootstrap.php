@@ -2,6 +2,7 @@
 
 class Bootstrap
 {
+    #url tipo => dominio/controlador/metodo/argumentos
     #esta funcion permite identificar el controlador, el metodo y los argumentos
     #asociados a una peticion web
     public static function run(Request $request)
