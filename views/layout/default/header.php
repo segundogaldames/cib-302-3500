@@ -42,7 +42,10 @@
                     <a href="#">Acerca de</a>
                 </li>
                 <li>
-                    <a href="<?= $_layoutParams['root'] ?>contacto">Contacto</a>
+                    <a href="<?= $_layoutParams['root'] ?>contactos">Contacto</a>
+                </li>
+                <li>
+                    <a href="<?= $_layoutParams['root'] ?>noticias">Noticias</a>
                 </li>
             </ul>
         </div>

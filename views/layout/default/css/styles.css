@@ -72,16 +72,46 @@ section{
 .articulo{
     width: 100%;
 }
+.btn{
+    text-align: center;
+    padding: 0.7em;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -ms-border-radius: 3px 3px 3px 3px;
+    -o-border-radius: 3px 3px 3px 3px;
+}
+.btn-primary{
+    background-color: blue;
+    color: aliceblue;
+}
+.btn-primary:hover{
+    background-color: rgb(69, 69, 222);
+}
 .center{
     text-align: center;
 }
 .center ul li{
     display: inline-block;
 }
+.error-center{
+    text-align: center;
+}
+.error-img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 .error-title{
     color: red;
     font-size: 24px;
     font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
 }
 .left{
     text-align: left;
