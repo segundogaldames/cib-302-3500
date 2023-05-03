@@ -74,17 +74,18 @@ section{
 }
 .btn{
     text-align: center;
-    padding: 0.7em;
+    padding: 0.8em;
     display: inline-block;
     margin: 5px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-decoration: none;
-    font-weight: bolder;
-    border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -ms-border-radius: 3px 3px 3px 3px;
-    -o-border-radius: 3px 3px 3px 3px;
+    font-weight:200;
+    border: 0px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
 }
 .btn-primary{
     background-color: blue;
@@ -139,4 +140,29 @@ section{
     color: blue;
     text-align: center;
     margin-bottom: 4px;
+}
+
+/*estilos de formulario*/
+.form-control{
+    height: 2.1em;
+    border:rgb(208, 219, 208) solid 1px;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -ms-border-radius: 5px 5px 5px 5px;
+    -o-border-radius: 5px 5px 5px 5px;
+}
+.form-group{
+
+}
+.form-label{
+    font-size: 1.15em;
+}
+.form-control, .form-label{
+    width: 100%;
+}
+
+.form-control,.form-group, .form-label{
+    margin-bottom: 5px;
+    display: block;
 }
