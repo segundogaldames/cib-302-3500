@@ -1,6 +1,9 @@
 /* article{
     width: 80%;
 } */
+html{
+    font-family: 'Roboto Mono', monospace;
+}
 aside{
     background-color: rgb(202, 230, 220);
     margin-bottom: 1.25rem;
@@ -24,6 +27,13 @@ aside ul li a:hover{
 footer{
     height: 6.25rem;
     background-color: rgb(192, 189, 189);
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    color:darkslategrey;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 0.3em;
 }
 header{
     display: grid;
@@ -61,7 +71,7 @@ nav ul li a:hover{
 }
 section{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns: 1fr 5fr;
     grid-gap: 10px;
     margin-top: 1.25rem;
     padding-left: 0.625rem;
@@ -131,9 +141,36 @@ section{
 .right{
     text-align: right;
 }
+.table{
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -ms-border-radius: 3px 3px 3px 3px;
+    -o-border-radius: 3px 3px 3px 3px;
+    margin-bottom: 0.4em;
+}
+.table th{
+    font-weight: bolder;
+    padding: 0.3em;
+    text-align: left;
+}
+.table td{
+    padding: 0.3em;
+}
+.table tr:hover{
+    background-color: rgb(207, 207, 207);
+}
 .text{
     max-width: 100%;
     color: black;
+}
+.text-info{
+    color: rgb(59, 59, 239);
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
 }
 .title-articulo{
     font-size: x-large;
