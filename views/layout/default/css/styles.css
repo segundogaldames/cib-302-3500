@@ -98,7 +98,7 @@ section{
     -o-border-radius: 5px 5px 5px 5px;
 }
 .btn-primary{
-    background-color: blue;
+    background-color: rgb(54, 54, 243);
     color: aliceblue;
 }
 .btn-primary:hover{
@@ -150,7 +150,7 @@ section{
     -moz-border-radius: 3px 3px 3px 3px;
     -ms-border-radius: 3px 3px 3px 3px;
     -o-border-radius: 3px 3px 3px 3px;
-    margin-bottom: 0.4em;
+    margin-bottom: 0.8em;
 }
 .table th{
     font-weight: bolder;

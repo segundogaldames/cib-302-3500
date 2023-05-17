@@ -15,7 +15,7 @@ define('CTRL','quVq6zWID3eaVS0YP4yD7F1fEvOOT+mDUBa4DAPWTYiVsXPUYIfDUpSpE1sFxKeDo
 define('DB_DRIVER','mysql');
 define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PASS','1234');#los usuarios de Windows usan comillas vacias ''
+define('DB_PASS','root.1234');#los usuarios de Windows usan comillas vacias ''
 define('DB_NAME','cib3023500');
 define('DB_CHAR','utf8');
 define('METHOD_ENCRYPT','AES-256-ECB');

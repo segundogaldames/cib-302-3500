@@ -1,7 +1,10 @@
 <section>
     <div></div>
     <div>
-        <h1>Lista de Roles</h1>
+        <h1>
+            Lista de Roles
+            <a href="<?= $_layoutParams['root'] ?>roles/create">Nuevo Rol</a>
+        </h1>
         <?php if(isset($this->roles) && count($this->roles)): ?>
         <table class="table">
             <thead>
@@ -12,11 +15,16 @@
                 </tr>
             </thead>
             <tbody>
+                <?php foreach($this->roles as $model): ?>
                 <tr>
-                    <td>#</td>
-                    <td>Nombre del rol</td>
-                    <td>Botones</td>
+                    <td><?= $model['id'] ?></td>
+                    <td><?= $model['nombre'] ?></td>
+                    <td>
+                        <a href="<?= $_layoutParams['root'] ?>roles/show/<?= $model['id']?>">Ver</a>
+                        <a href="<?= $_layoutParams['root'] ?>roles/edit/<?= $model['id']?>">Editar</a>
+                    </td>
                 </tr>
+                <?php endforeach; ?>
             </tbody>
         </table>
 
