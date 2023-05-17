@@ -2,7 +2,7 @@
 #configuar accesos, datos y roles del sistema
 #variables de entorno
 
-define('BASE_URL','http://localhost:8080/cib302-3500/');
+define('BASE_URL','http://localhost/cib-302-3500/');
 define('DEFAULT_CONTROLLER','index');
 define('DEFAULT_LAYOUT','default');
 define('APP_NAME','Portal del Noticias');
