@@ -5,6 +5,12 @@
             Lista de Roles
             <a href="<?= $_layoutParams['root'] ?>roles/create" class="btn btn-outline-dark">Nuevo Rol</a>
         </h1>
+        <?php if(Session::get('msg_success')): ?>
+            <p class="alert-success"><?= Session::get('msg_success') ?></p>
+        <?php 
+            endif; 
+            Session::destroy('msg_success');
+        ?>
         <?php if(isset($this->roles) && count($this->roles)): ?>
         <table class="table">
             <thead>

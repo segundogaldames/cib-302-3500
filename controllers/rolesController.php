@@ -41,5 +41,20 @@ class rolesController extends Controller
             Session::set('msg_error','Debe ingresar el nombre del rol');
             $this->redireccionar('roles/create');
         }
+
+        #verificar que el rol no exista
+        $rol = $this->_rol->getRolNombre($this->getTexto('nombre'));
+
+        if($rol){
+            Session::set('msg_error','El rol ingresado ya existe... intente con otro');
+            $this->redireccionar('roles/create');
+        }
+
+        $rol = $this->_rol->addRol($this->getTexto('nombre'));
+
+        if($rol){
+            Session::set('msg_success','El rol se ha registrado correctamente');
+            $this->redireccionar('roles');
+        }
     }
 }

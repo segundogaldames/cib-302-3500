@@ -21,8 +21,23 @@ class rolModel extends Model
         return $rol->fetch();
     }
 
+    public function getRolNombre($nombre)
+    {
+        $nombre = strtolower($nombre);
+        $nombre = ucfirst($nombre);
+
+        $rol = $this->_db->prepare("SELECT id FROM roles WHERE nombre = ?");
+        $rol->bindParam(1, $nombre);
+        $rol->execute();
+
+        return $rol->fetch();
+    }
+
     public function addRol($nombre)
     {
+        $nombre = strtolower($nombre);
+        $nombre = ucfirst($nombre);
+
         $rol = $this->_db->prepare("INSERT INTO roles(nombre, created_at, updated_at) VALUES(?, now(), now())");
         $rol->bindParam(1, $nombre);
         $rol->execute();
