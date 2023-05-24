@@ -3,7 +3,7 @@
     <div>
         <h1>
             Lista de Roles
-            <a href="<?= $_layoutParams['root'] ?>roles/create">Nuevo Rol</a>
+            <a href="<?= $_layoutParams['root'] ?>roles/create" class="btn btn-outline-dark">Nuevo Rol</a>
         </h1>
         <?php if(isset($this->roles) && count($this->roles)): ?>
         <table class="table">

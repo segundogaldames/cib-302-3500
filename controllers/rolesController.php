@@ -26,6 +26,20 @@ class rolesController extends Controller
     public function create()
     {
         $this->_view->titulo = 'Roles';
+        $this->_view->send = CTRL;
         $this->_view->render('create');
+    }
+
+    public function store()
+    {
+        if($this->getPostParam('send') != CTRL)
+        {
+            throw new Exception('Acceso no permitido');
+        }
+
+        if (!$this->getTexto('nombre')) {
+            Session::set('msg_error','Debe ingresar el nombre del rol');
+            $this->redireccionar('roles/create');
+        }
     }
 }
