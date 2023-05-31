@@ -1,4 +1,8 @@
 <!-- seccion pie de pagina -->
-<footer>
-    pie de pagina
-</footer>
+<div class="container-fluid">
+    <footer>
+        pie de pagina
+    </footer>
+</div>
+</body>
+</html>

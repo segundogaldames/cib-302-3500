@@ -1,61 +1,23 @@
-<section>
-    <aside>
-        <ul>
-            <li>
-                <a href="<?= $_layoutParams['root'] ?>roles">Roles</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">Categoría 2</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#">Categoría 3</a>
-            </li>
-        </ul>
-    </aside>
-    <article>
-        <div class="notice">
-            <a href="#">
-                <div class="articulo">
-                    <div class="imagen">
-                        <img src="img/noticias/imagen_1.jpeg" alt="" width="100%">
-                    </div>
-                    <div class="text">
-                        <h1 class="title-articulo">Titulo</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde, enim hic doloremque
-                            similique, quam exercitationem, aliquam architecto velit dolorum inventore quae libero
-                            magnam iure molestiae quia ad nostrum dolor.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="articulo">
-                    <div class="imagen">
-                        <img src="img/noticias/imagen_1.jpeg" alt="" width="100%">
-                    </div>
-                    <div class="text">
-                        <h1 class="title-articulo"><?= $this->noticia ?></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem unde, enim hic
-                            doloremque similique, quam exercitationem, aliquam architecto velit dolorum inventore
-                            quae libero magnam iure molestiae quia ad nostrum dolor.</p>
-                    </div>
-                </div>
-            </a>
-            <div class="articulo">
-                Noticia
-            </div>
-            <div class="articulo">
-                Noticia
-            </div>
-            <div class="articulo">
-                Noticia
-            </div>
-            <div class="articulo">
-                Noticia
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+                    Roles
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Categoria 2</a>
+                <a href="#" class="list-group-item list-group-item-action">Categoria 3</a>
             </div>
         </div>
-    </article>
-</section>
+        <div class="col-md-10">
+        <div class="card col-md-3">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
