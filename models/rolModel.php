@@ -45,4 +45,15 @@ class rolModel extends Model
         $row = $rol->rowCount();
         return $row;
     }
+
+    public function editRol($id, $nombre)
+    {
+        $rol = $this->_db->prepare("UPDATE roles SET nombre = ?, updated_at = now() WHERE id = ?");
+        $rol->bindParam(1, $nombre);
+        $rol->bindParam(2, $id);
+        $rol->execute();
+
+        $row = $rol->rowCount();
+        return $row;
+    }
 }

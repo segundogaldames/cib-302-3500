@@ -27,6 +27,7 @@ class rolesController extends Controller
     {
         $this->_view->titulo = 'Roles';
         $this->_view->send = CTRL;
+        $this->_view->process = "roles/store";
         $this->_view->render('create');
     }
 
@@ -55,6 +56,37 @@ class rolesController extends Controller
         if($rol){
             Session::set('msg_success','El rol se ha registrado correctamente');
             $this->redireccionar('roles');
+        }
+    }
+
+    public function edit($id = null)
+    {
+        $this->_view->titulo = 'Roles';
+        $this->_view->send = CTRL;
+        $this->_view->rol = $this->_rol->getRolId($this->filtrarInt($id));
+        $this->_view->process = "roles/update/{$id}";
+        $this->_view->render('edit');
+    }
+
+    public function update($id = null)
+    {
+        if($this->getPostParam('_method') != 'PUT')
+        {
+            throw new Exception('Acceso no permitido');
+        }
+
+        if (!$this->getTexto('nombre')) {
+            Session::set('msg_error','Debe ingresar el nombre del rol');
+            $this->redireccionar('roles/edit/' . $id);
+        }
+
+        #verificar que el rol no exista
+
+        $rol = $this->_rol->editRol($this->filtrarInt($id), $this->getTexto('nombre'));
+
+        if($rol){
+            Session::set('msg_success','El rol se ha modificado correctamente');
+            $this->redireccionar('roles/show/' . $id);
         }
     }
 }
