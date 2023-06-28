@@ -4,7 +4,6 @@
             <?php include_once ROOT . 'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'sidebar.php' ?>
         </div>
         <div class="col-md-10">
-            <?php print_r($this->usuarios)?>
             <div class="col-md-6">
                 <?php include_once ROOT . 'views' . DS . 'partials' . DS . '_mensajes.php' ?>
                 <?php include_once ROOT . 'views' . DS . 'usuarios' . DS . '_form.php' ?>

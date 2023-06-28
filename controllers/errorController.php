@@ -16,4 +16,10 @@ class errorController extends Controller
         $this->_view->titulo = 'Error: Página No Encontrada';
         $this->_view->render('error');
     }
+
+    public function denied()
+    {
+        $this->_view->titulo = 'Error: Página Inaccesible';
+        $this->_view->render('denied');
+    }
 }

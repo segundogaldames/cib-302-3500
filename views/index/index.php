@@ -4,6 +4,7 @@
             <?php include_once ROOT . 'views' . DS . 'layout' . DS . DEFAULT_LAYOUT . DS . 'sidebar.php' ?>
         </div>
         <div class="col-md-10">
+            <?= Session::get('user_rol');?>
             <div class="card col-md-3">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
