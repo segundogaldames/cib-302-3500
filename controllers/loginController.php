@@ -14,7 +14,7 @@ class loginController extends Controller
 
     public function login()
     {
-        $this->_view->titulo = 'Usurios';
+        $this->_view->titulo = 'Usuarios';
         $this->_view->send = CTRL;
         $this->_view->process = "login/store";
         $this->_view->render('login');
